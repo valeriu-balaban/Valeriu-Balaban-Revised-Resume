@@ -1,0 +1,246 @@
+% \let\nofiles\relax
+\documentclass[11pt]{article} 
+
+\usepackage{graphicx}
+\usepackage{multicol}
+
+% Adjust margins
+\usepackage[letterpaper, includefoot, margin=0.5in]{geometry}
+% \setlength{\resumewidth}{7.5in}
+\setlength{\textheight}{10.3in}
+
+% No paragraph indent
+\setlength{\parindent}{0pt} 
+
+% Array distance between rows
+\renewcommand{\arraystretch}{1.8}
+
+% Hyperlinks
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+
+% Font
+\usepackage{cmbright}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage[many]{tcolorbox}
+
+\newtcolorbox{rightrule}[1][]{blankest, breakable,  before skip=1mm, right skip=0mm, top=2mm, bottom=3mm, right=2.5mm, colframe=black, colback=white, left=2.5mm, #1}
+
+\usepackage{setspace}
+
+\makeatletter
+\newcommand{\hl}[1]{%
+    \setbox\@tempboxa\hbox{#1}%
+    \ifdim\wd\@tempboxa>\linewidth
+    \noindent
+    \fcolorbox{black}{white}{%
+        \parbox[m]{\dimexpr\linewidth-2\fboxsep}{{\large \onehalfspacing #1}}
+          
+        % \end{minipage}
+        % {\dimexpr\linewidth-2\fboxsep}{}%
+    }%
+    \else
+    \fcolorbox{black}{white}{#1}%
+    \fi
+}%Highlighter.
+\makeatother
+
+\newcommand{\checkthis}{{\small \faIcon{star}}}
+
+% List symbols
+\usepackage{enumitem}
+\setlist[itemize,1]{label={\small \faIcon{angle-right}},parsep=2pt, itemsep=2pt}
+\linespread{1}
+
+% Do not indent under section headings
+% \newsectionwidth{0pt}  
+
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead{}
+\fancyfoot{}
+
+\title{Valeriu Balaban Resume}
+
+% Start contents
+\begin{document}
+\pagecolor{black!5!white}
+
+\thispagestyle{fancy}
+
+% Name
+\moveleft.5\hoffset\centerline{\textbf{\huge V{\Large AL} B{\Large ALABAN}}}
+\vspace{2mm}
+
+% Contact
+\moveleft.5\hoffset\centerline{ \textit{\href{mailto:vbalaban@usc.edu}{vbalaban@usc.edu} \enskip $\cdot$ \enskip (213) 275 - 9934 \enskip $\cdot$ \enskip \href{https://www.linkedin.com/in/valeriubalaban}{{\scriptsize\faIcon{linkedin}} valeriubalaban} \enskip $\cdot$ \enskip Los Angeles, CA }} 
+
+% Social
+% \moveleft.5\hoffset\centerline{\textit{\href{https://www.linkedin.com/in/valeriubalaban}{\faIcon{linkedin} valeriubalaban}  \enskip \enskip \enskip \href{https://github.com/valeriu-balaban}{\faIcon{github} valeriu-balaban}}}
+
+
+% \begin{resume}
+% \vspace{-8mm}
+% \vspace{2mm}
+\begin{tcolorbox}[enhanced, boxrule=0.5pt, colback=white, top=6mm, bottom=4mm, right=5mm, left=5mm, arc=0mm, leftrule=0mm, rightrule=0mm]
+    {\large 
+    \textbf{\Large SUMMARY for Staff Machine Learning (ML) Engineer }
+    \begin{itemize}[left=0pt]
+    \item 7+ years of experience (industry + academia) building ML-training loops in Pytorch and C++.
+    \item 2 ML papers -- training strategies for improving both \textit{robustness} and \textit{fairness} of the trained model.
+    \item Researched and developed ML and AI projects which placed second at Infineon's innovation conf.
+    \item Founded \textit{Race On}, an organization that taught 450+ students to code and race self-driving cars.
+    \end{itemize}
+
+    {\normalsize Keywords: \textit{Pytorch, Tensorflow, scikit-learn, scikit-image, OpenCV, Python, Matlab, C++}}
+    
+       
+    %Published two machine learning papers on methods for optimizing robustness and fairness of the trained models. Devised algorithms for hardware and software design using machine learning. 
+    }
+
+    % \vspace{-2mm}
+    % \begin{multicols}{2}
+    % \begin{itemize}[label={\footnotesize \faIcon{check}}]   
+    %     \setlength{\itemsep}{-0.0em}
+    %     \item \textit{Programming Languages:} {\fontfamily{qcs}\selectfont \footnotesize Python, Matlab, C++, C}
+    %     \item \textit{Machine Learning:}  {\fontfamily{qcs}\selectfont \footnotesize Pytorch, Pytorch Lightning, W\&}
+    %     \item \textit{Image processing:} {\fontfamily{qcs}\selectfont \footnotesize OpenCV, Scikit-Image, SciPy}
+    %     \item \textit{Operating Systems:} {\fontfamily{qcs}\selectfont \footnotesize Linux, Embedded Linux, ROS}
+    %     \item \textit{Firmware design:} {\fontfamily{qcs}\selectfont \footnotesize C/ASM for ARM, AVR, 8051}
+    %     \item \textit{Hardware design:} {\fontfamily{qcs}\selectfont \footnotesize Verilog, KiCAD, Altium}
+    % \end{itemize}
+    % \end{multicols}
+    % \vspace{-4mm}
+\end{tcolorbox}
+\begin{flushright}
+    \checkthis~\!\! {\small Highlights of ML experience}
+\end{flushright}
+\vspace{-6mm}
+% \vspace{1mm}
+%
+%--------PROFESSIONAL--------
+%
+%============================
+%      USC
+%============================
+% \vspace{-2mm}
+\hphantom{Work Experience}\newline
+\textbf{\faIcon{university} PhD in Electrical and Computer Engineering (Final Year)} \enskip $\cdot$ \enskip {\small University of Southern California} \hfill \textit{\footnotesize 2016 -- Present} 
+% Change itemize symbol
+\begin{rightrule}
+% \vspace{-1mm}
+% \textit{ \enskip $\cdot$ \enskip Annenberg Fellowship}
+% \vspace{2mm}
+\begin{itemize}[left=5pt]
+    \item[\checkthis] \hl{Devised ML training procedures for jointly optimizing individual and group fairness robust to changes in the data distribution -- of paramount interest as sensitive groups are often underrepresented.\footnotemark[1]}
+
+    \item[\checkthis] \hl{Introduced \textit{Distributional Variance Penalization} -- an ML training strategy that improves generalization and robustness when the training data is limited and/or mislabeled.\footnotemark[2]}
+    
+    \item Devised computer vision (CV) algorithms (OpenCV, C++) for detecting and tracking biological bodies. Investigated networking properties of neurons\footnotemark[3] and fractal self-organization properties of bacteria.\footnotemark[4]
+    
+    \item[\checkthis] \hl{Founded \href{http://raceon.io/}{\textit{Race On} \scriptsize \faIcon{external-link-alt}} -- led a team of 11 PhD students who taught 450+ MS students how to code (CV and control) and race self-driving cars. The org. became financially independent within a year.}
+    % \item Configured our research cluster, Linux containers, number of users, backup functionalities % What's the purpose of this, low-level ML
+    \item Implemented an automated grading system (Python, GitHub) designed to provide transparency and granular feedback to combat learning limitations imposed by COVID, and evaluated assignments for 200+ grad students.
+    \item Instructed (TAed) 1400+ undergrad and grad students for over 8 semesters teaching Embedded Systems, Network Programming, and Modern C++ ($\geq 11$) achieving an average student evaluation rating of 3.8/4.
+    
+    % \item Devised new algorithms for identifying cells from images and investigated their ``social network''. Related publications:
+    % \begin{small}
+    % \begin{itemize}[label={\faIcon[regular]{file-alt}}, left=0pt]
+    %     \item \href{https://www.nature.com/articles/s41598-020-72013-7}{\textit{Network science characteristics of brain-derived neuronal cultures deciphered from images.} Accepted in Scientific Reports (2020) \scriptsize \faIcon{external-link-alt}}
+    %     \item \href{https://www.nature.com/articles/s41598-018-30654-9}{\textit{Quantifying emergence and self-organisation of Enterobacter cloacae microbial communities.} Accepted in Scientific Reports (2018) \scriptsize \faIcon{external-link-alt}}
+    % \end{itemize}
+    % \end{small}
+    % \item Investigated methods for improving robustness and group fairness of machine learning models. Related publications:
+    % \begin{small}
+    % \begin{itemize}[label={\faIcon[regular]{file-alt}}, left=0pt]
+    %     \item \textit{Improving Robustness: When and How to Minimize or Maximize the Loss Variance.} Accepted in ICMLA (2022)
+    %     \item \textit{Optimizing for Individual and Group Fairness using Variance Penalization.} Under review in AAAI (2023)
+    % \end{itemize}
+    % \end{small}
+    % \item Founded Race On -- a competition where students build and race self-driving cars, 1/10 scale models. More info below.
+    % \item Instructed (TA) ``Introduction to Embedded Systems'' and ``Software Design Optimization'' classes for 7 semesters. Covered modern C++ concepts (C++20 standard). Implemented an automated grading system using GitHub Actions.
+\end{itemize}
+\end{rightrule}
+\footnotetext[1]{{\scriptsize \textit{Optimizing for Individual and Group Fairness using Variance Penalization.} Under Review}}
+\footnotetext[2]{{\scriptsize \textit{Improving Robustness: When and How to Minimize or Maximize the Loss Variance.} Presenting at ICMLA (2022)}}
+\footnotetext[3]{{\scriptsize \textit{Network science characteristics of brain-derived neuronal cultures deciphered from images.} Scientific Reports (2020)}}
+\footnotetext[4]{{\scriptsize \textit{Quantifying emergence and self-organisation of Enterobacter cloacae microbial communities.} Scientific Reports (2018)}}
+%============================
+%      Infineon Technologies
+%============================
+\vspace{-1mm}
+\textbf{Software and Hardware Engineer} \enskip $\cdot$ \enskip {\small Infineon Technologies} \hfill  \textit{\footnotesize 2014 -- 2016}
+\begin{rightrule}
+    \begin{itemize}[left=5pt]
+    \item[\checkthis] \hl{Implemented an ML-based (SVM) automation strategy for simulation and lab experiments that reduced the validation time of integrated circuits (IC) from 120 hours to 8 hours (15-fold decrease).}
+    \item[\checkthis] \hl{Researched and built an AI-driven (PSO) power converter ($f_{\scriptscriptstyle switch} \leq 100kHz$) that compensates for load changes and component degradation, placed second at Inno~Week (company's innovation conf).}
+    \item Devised system-level models (Matlab/Simulink) for validating the requirements of the next-gen IC modules.
+    \end{itemize}
+\end{rightrule}
+%============================
+%      D&D Technologies
+%============================
+\vspace{-1mm}
+\textbf{Software and Hardware Engineer} \enskip $\cdot$ \enskip {\small D\&D Technologies} \hfill \textit{\footnotesize 2012 -- 2014}
+\begin{rightrule}
+    \begin{itemize}[left=5pt]
+    \item Designed the electronics board (PCB), firmware (Embedded C), and server software (C++) for a distributed jackpot system currently deployed in casinos across 6 countries spanning 2 continents.
+    \item Devised a secure network (CAN bus) that satisfies the real-time constraints (order of milliseconds) for coordinating the triggering moment of a distributed jackpot system across 128 slot machines.
+    \item Created a custom Linux-based system (Yocto) optimized for minimum downtime and a reboot time $< 2$ seconds.
+    \end{itemize}
+\end{rightrule}
+%============================
+%      UPB
+%============================
+% \vspace{-6mm}
+
+\textbf{\faIcon{university} MS and BS in Electrical Engineering} \enskip $\cdot$ \enskip {\small University ``Politehnica'' of Bucharest, Romania} \hfill \textit{\footnotesize 2009 -- 2015}
+% \begin{rightrule}[top=0mm, bottom=1mm]
+    % \begin{itemize} 
+    % \item \textbf{MS in Microelectronics} -- Thesis title \textit{``Brushless motor driver using a software-controlled inverter''}
+    % \item \textbf{BS in Electrical Engineering} -- Thesis title \textit{``Behavioural modelling of electrical vehicle inverter''}
+    % \end{itemize}
+% \end{rightrule}
+% $\cdot$ \enskip \textbf{MS in Microelectronics} -- Thesis title \textit{``Brushless motor driver using a software-controlled inverter'' \hfill Bucharest, Romania \faIcon{map-marker-alt}} \\
+% $\cdot$ \enskip \textbf{BS in Electrical Engineering} -- Thesis title \textit{``Behavioural modelling of electrical vehicle inverter''}
+
+% \href{http://www.upb.ro/}{University ``Politehnica'' of Bucharest \scriptsize \faIcon{external-link-alt}} \hfill \textit{Bucharest, Romania \faIcon{map-marker-alt}} \\
+% \textbf{MS in Microelectronics} \enskip $\cdot$ \enskip Thesis title \textit{``Brushless motor driver using a software-controlled inverter''} \hfill \textbf{2013 -- 2015} \hspace{3mm} \\
+% \textbf{BS in Electrical Engineering}  \enskip $\cdot$ \enskip Thesis title \textit{``Behavioural modelling of electrical vehicle inverter''} \hfill \textbf{2009 -- 2013}\enskip \enskip \enskip\\
+ 
+
+
+%----------------------------------
+%           ACTIVITIES
+%----------------------------------
+% \vspace{-7mm}
+% \begin{center}
+%     \rule{5.5in}{0.4pt}
+%     % $\cdot$ \enskip $\cdot$ \enskip $\cdot$ 
+% \end{center}
+% \vspace{-5mm}
+
+% \textbf{Topics for Small Talk (Interests)}\\
+% Brewing fresh pour-over coffee (V60); Reading (currently ``Sapiens -- A Brief History of Humankind'' by Yuval Noah Harari); Watching ``How I Met Your Mother'' and Formula 1 races (rooting for Checo); LCS vs LEC;
+
+
+
+% \textbf{\href{http://raceon.io/}{Race On -- A Self-Driving Car Competition \scriptsize \faIcon{external-link-alt}} -- Founder}  
+% \hfill        \textit{\small 2019 -- 2020} \\
+% Founded and organized a competition for three consecutive semesters that engages students in hardware-software development to build and race a self-driving car. Each semester, we organize a series of workshops that introduce around 40 teams of 2 to 4 graduate students to ROS, control algorithms, real-time image processing techniques, localization and mapping strategies.
+
+
+% \textbf{Freescale Embedded Challenge -- First Place} \hfill \textit{\small 2014} \\
+% Led a team that developed a car safety system able to scan and classify objects near the driving road, notifying for potential dangers. The deployed Linux system was built from scratch using Yocto, and optimized for real-time video processing.
+
+
+% \textbf{Freescale Cup, International Competition -- \href{https://youtu.be/gmf_8sHqpfw}{Winning Race Video \faIcon{youtube}}}  \hfill        \textit{\small 2012 -- 2014} \\
+% For three consecutive years, led a team which built and raced an autonomous robotic car. The car included a video camera for track recognition, encoders and IMU sensors for state estimation, and an ARM microcontroller to cotrol the steering. 
+
+% \end{resume}
+
+\end{document}
